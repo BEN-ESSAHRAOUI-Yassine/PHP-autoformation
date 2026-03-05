@@ -21,8 +21,8 @@ for($i = 0; $i < 4; $i++){
     if (empty($friend[$i])) {
         echo "Name please!!!";
     }
-    $cup = htmlspecialchars($_REQUEST['fname2']);
-    if (empty($debt)) {
+    $debt[$i]= htmlspecialchars($_REQUEST['fname2']);
+    if (empty($debt[$i])) {
         echo "How much he owes you!!!";
     }
 }
