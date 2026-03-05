@@ -33,7 +33,7 @@ for($i = 0; $i < 4; $i++){
 echo "your total amount of debts is : " . $total . " MAD.\n and friends who owes you more than 100 DH :";
 for($i = 0; $i < 4; $i++){
     if ($debt[$i] > 100) {
-            echo $friend[$i] & " owes you " & $debt[$i] & " MAD. \n";
+            echo $friend[$i] . " owes you " . $debt[$i] . " MAD. \n";
     }
 }
 ?> 
