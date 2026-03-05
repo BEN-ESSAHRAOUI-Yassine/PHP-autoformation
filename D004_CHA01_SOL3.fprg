@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="D004_CHA01_SOL3"/>
+        <attribute name="authors" value="admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 01:27:46 PM"/>
+        <attribute name="created" value="YWRtaW47U0lNUExPTjsyMDI2LTAzLTA1OzEyOjQ2OjQwIFBNOzIzNDY="/>
+        <attribute name="edited" value="YWRtaW47U0lNUExPTjsyMDI2LTAzLTA1OzAxOjI3OjQ2IFBNOzE7MjQ1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cup, bill, prixuni" type="Integer" array="False" size=""/>
+            <declare name="user" type="String" array="False" size=""/>
+            <assign variable="prixuni" expression="10"/>
+            <output expression="&quot;welcome to our coffeshop !!! &quot;" newline="True"/>
+            <output expression="&quot; Are you a student ? yes or no ?&quot;" newline="True"/>
+            <input variable="user"/>
+            <output expression="&quot; how many cup of tea u want?&quot;" newline="True"/>
+            <input variable="cup"/>
+            <if expression="cup &gt; 5">
+                <then>
+                    <assign variable="prixuni" expression="prixuni - 1"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="bill" expression="prixuni * cup"/>
+            <if expression="user == &quot;yes&quot;">
+                <then>
+                    <assign variable="bill" expression="bill * 0.8"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;pay &quot; &amp; bill &amp; &quot; dh for &quot;&amp; cup &amp;&quot; cups of tea. &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
