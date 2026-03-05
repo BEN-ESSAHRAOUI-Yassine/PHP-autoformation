@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="D004_CHA03_SOL1"/>
+        <attribute name="authors" value="admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-05 12:31:18 PM"/>
+        <attribute name="created" value="YWRtaW47U0lNUExPTjsyMDI2LTAzLTA1OzExOjM0OjEyIEFNOzIzMjY="/>
+        <attribute name="edited" value="YWRtaW47U0lNUExPTjsyMDI2LTAzLTA1OzEyOjMxOjE4IFBNOzE7MjQ1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total, i" type="Integer" array="False" size=""/>
+            <declare name="morethan100" type="Boolean" array="False" size=""/>
+            <declare name="debt" type="Integer" array="True" size="5"/>
+            <declare name="friend" type="String" array="True" size="5"/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="&quot;Insert name of your friend :&quot;" newline="True"/>
+                <input variable="friend[i]"/>
+                <output expression="&quot;How much &quot; &amp; friend[i] &amp; &quot; owes you ? :&quot;" newline="True"/>
+                <input variable="debt[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="total" expression="total + debt[i]"/>
+            </for>
+            <output expression="&quot;your total amount of debts is : &quot; &amp; total &amp; &quot; MAD.&quot;" newline="True"/>
+            <output expression="&quot;and friends who owes you more than 100 DH :&quot;" newline="True"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="debt[i] &gt; 100">
+                    <then>
+                        <output expression="friend[i] &amp; &quot; owes you &quot; &amp; debt[i] &amp; &quot; MAD. &quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
