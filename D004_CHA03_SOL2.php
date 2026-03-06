@@ -24,7 +24,9 @@ echo "Friends who owe more than 100 DH:<br>";
 
 foreach ($debts as $friend => $amount) {
     if ($amount > 100) {
-        echo "$friend owes $amount DH<br>";
+        echo "<mark>$friend</mark>  owes $amount DH<br>";
+    } else {
+        echo "$friend  owes $amount DH<br>";
     }
 }
 
