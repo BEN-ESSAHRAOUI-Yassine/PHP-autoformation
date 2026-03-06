@@ -5,8 +5,16 @@
 
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
     <h2>welcome to our app !!! </h2>
-    <br> Insert name of your friend : <input type="text" name="fname">
-    <br> How much he/she owes you ? : <input type="number" name="fname2">
+    <br> Insert name of your friend : <input type="text" name="fnam0">
+    <br> How much he/she owes you ? : <input type="number" name="fdeb0">
+    <br> Insert name of your friend : <input type="text" name="fnam1">
+    <br> How much he/she owes you ? : <input type="number" name="fdeb1">
+    <br> Insert name of your friend : <input type="text" name="fnam2">
+    <br> How much he/she owes you ? : <input type="number" name="fdeb2">
+    <br> Insert name of your friend : <input type="text" name="fnam3">
+    <br> How much he/she owes you ? : <input type="number" name="fdeb3">
+    <br> Insert name of your friend : <input type="text" name="fnam4">
+    <br> How much he/she owes you ? : <input type="number" name="fdeb4">
     <input type="submit">
 </form>
 
@@ -16,35 +24,30 @@ $friend = [];
 $total = 0 ;
 $stat = 0;
 
-for($i = 0; $i < 4; $i++){
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // collect value of input field
-    $friend[$i] = htmlspecialchars($_REQUEST['fname']);
-    if (empty($friend[$i])) {
-        echo "Name please!!!";
-    }
-    $debt[$i]= htmlspecialchars($_REQUEST['fname2']);
-    if (empty($debt[$i])) {
-        echo "How much he owes you!!!";
-    }
-    $_SERVER["REQUEST_METHOD"] ="";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
-    $stat++;
-    echo $stat;
-    if ($stat == 4){
-        $stat = 0;
-        for($i = 0; $i < 4; $i++){
-            $total += $debt[$i];
+    for($i = 0; $i < 5; $i++){
+        $friend[$i] = htmlspecialchars($_REQUEST['fnam'.$i]);
+        if (empty($friend[$i])) {
+            echo "Name please!!!";
         }
-        echo "your total amount of debts is : " . $total . " MAD.\n and friends who owes you more than 100 DH :";
-        for($i = 0; $i < 4; $i++){
-            if ($debt[$i] > 100) {
-                    echo $friend[$i] . " owes you " . $debt[$i] . " MAD. \n";
-            }
+        $debt[$i]= htmlspecialchars($_REQUEST['fdeb'.$i]);
+        if (empty($debt[$i])) {
+            echo "How much he owes you!!!";
         }
     }
+    for($i = 0; $i < 5; $i++){
+        $total += $debt[$i];
+    }
+    echo "your total amount of debts is : " . $total . " MAD.\n and friends who owes you more than 100 DH :";
+    for($i = 0; $i < 5; $i++){
+        if ($debt[$i] > 100) {
+            echo $friend[$i] . " owes you " . $debt[$i] . " MAD. \n";
+        }
+    }
+    
 }
-}
+
 
 ?> 
 
