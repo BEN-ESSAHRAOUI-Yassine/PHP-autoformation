@@ -14,3 +14,9 @@ D005_CHA03_SOL1 : PHP Loops Challenge 03: Even Number Detector<br>
 D005_CHA04_SOL1 : PHP Loops Challenge 04: Even Number Counter<br>
 D005_CHA05_SOL1 : PHP Loops Challenge 05: Star Printer<br>
 D005_CHA06_SOL1 : PHP Loops Challenge 06: Growing Triangle (Nested Loops)<br>
+D005_CHF01_SOL1 : PHP Functions Challenge 01: The Personalized Greeting (Parameters)<br>
+D005_CHF02_SOL1 : PHP Functions Challenge 02: The Calculation Engine (Return Values)<br>
+D005_CHF03_SOL1 : PHP Functions Challenge 03: The Logic Gatekeeper (Boolean Return)<br>
+D005_CHF04_SOL1 : PHP Functions Challenge 04: The "Safe" Multiplier (Logic Guarding)<br>
+D005_CHF05_SOL1 : PHP Functions Challenge 05: The Text Flipper (Algorithmic Synthesis)<br>
+
