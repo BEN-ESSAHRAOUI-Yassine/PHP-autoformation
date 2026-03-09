@@ -30,11 +30,8 @@ usort($products, function($a, $b) use ($sort) {
 
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Product Catalog</title>
-</head>
 <body>
-
+<h1>Product Catalog</h1>
 <h2>Filter by Category</h2>
 <a href="?category=tech&sort=<?php echo $sort; ?>">Tech</a> |
 <a href="?category=furniture&sort=<?php echo $sort; ?>">Furniture</a> |
