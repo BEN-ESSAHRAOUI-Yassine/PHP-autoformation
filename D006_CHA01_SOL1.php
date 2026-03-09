@@ -18,7 +18,6 @@ if ($category) {
 }
 
 
-// Sort products alphabetically
 usort($products, function($a, $b) use ($sort) {
     if ($sort === 'desc') {
         return strcmp($b['name'], $a['name']);
