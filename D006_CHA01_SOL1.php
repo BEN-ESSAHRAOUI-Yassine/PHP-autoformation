@@ -3,8 +3,8 @@
 $products = [
     ["name" => "Laptop", "category" => "tech"],
     ["name" => "Phone", "category" => "tech"],
-    ["name" => "Tablet", "category" => "tech"],
     ["name" => "Desk", "category" => "furniture"],
+    ["name" => "Tablet", "category" => "tech"],    
     ["name" => "Chair", "category" => "furniture"]
 ];
 
