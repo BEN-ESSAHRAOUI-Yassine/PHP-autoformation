@@ -1,6 +1,9 @@
 <?php
 session_start();
-
+if (empty($_SESSION["username"])){
+    header("Location: D007_CHA08_PG1.php");
+    exit();
+}else{
 $username = $_SESSION["username"] ?? "Guest";
 $language = $_SESSION["language"] ?? "Unknown";
 
@@ -27,3 +30,4 @@ if (isset($_POST["logout"])) {
 </form>
 </body>
 </html>
+<?php } ?>

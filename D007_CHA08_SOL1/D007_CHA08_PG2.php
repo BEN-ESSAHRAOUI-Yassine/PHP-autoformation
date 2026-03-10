@@ -1,8 +1,12 @@
 <?php
 session_start();
+if (empty($_SESSION["username"])){
+    header("Location: D007_CHA08_PG1.php");
+    exit();
+}else{
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-     if (!empty($_POST["language"])){
+    if (!empty($_POST["language"])){
         $_SESSION["language"] = $_POST["language"];
         header("Location: D007_CHA08_PG3.php");
         exit();
@@ -29,3 +33,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </body>
 </html>
+<?php } ?>
