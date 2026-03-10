@@ -1,5 +1,11 @@
 <?php
 session_start();
+if (isset($_POST["logout"])) {
+    session_unset();
+    session_destroy();
+    header("Location: " . $_SERVER['PHP_SELF']);
+    exit();
+}
 
 if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
@@ -12,14 +18,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         if (!in_array($item, $_SESSION['cart'])) {
             $_SESSION['cart'][] = $item;
-        } else {
-            echo " this product has been selected before;";
         }
     }
 
     header("Location: " . $_SERVER['PHP_SELF']);
     exit();
 }
+
 $items = [
     "Laptop",
     "Phone",
@@ -46,6 +51,7 @@ $items = [
     <button type="submit">Add to Cart</button>
 </form>
 
+
 <br>
 
 <?php endforeach; ?>
@@ -57,6 +63,10 @@ $items = [
     <li><?php echo $cartItem; ?></li>
 <?php endforeach; ?>
 </ul>
+
+<form method="POST">
+    <input type="submit" name="logout" value="logout">
+</form> 
 
 </body>
 </html>
