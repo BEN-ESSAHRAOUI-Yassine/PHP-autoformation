@@ -19,16 +19,16 @@ Understand the requirements and expected features before starting development.
   - Dashboard displaying devices
   - Search functionality
   - Inventory value calculation
-- [ ] Sketch the UI layout on paper.
-+---------------------------------------+
-| GearLog Dashboard                     |
-| Total Inventory Value: $5400          |
-| Search: [________]                    |
-+---------------------------------------+
-| Serial | Device | Category | Status   |
-|---------------------------------------|
-| SN123 | Dell | Laptop | Repair        |
-+---------------------------------------+
+- [ ] Sketch the UI layout on paper.<br>
++---------------------------------------+<br>
+| GearLog Dashboard                     |<br>
+| Total Inventory Value: $5400          |<br>
+| Search: [________]                    |<br>
++---------------------------------------+<br>
+| Serial | Device | Category | Status   |<br>
+|---------------------------------------|<br>
+| SN123 | Dell | Laptop | Repair        |<br>
++---------------------------------------+<br>
 
 ---
 
@@ -59,98 +59,89 @@ Before coding, review the following topics.
 
 ### Practice
 
-```sql
-SELECT * FROM assets;
-SELECT SUM(price) FROM assets;
-SELECT * FROM assets WHERE device_name LIKE '%Dell%';
+1. [ ] sql command
 
-2. PHP + MySQL Connection (PDO)
-Topics to learn
+2. [ ] PHP + MySQL Connection (PDO)
+    Topics to learn
 
-PDO connection
+    PDO connection
 
-try/catch error handling
+    try/catch error handling
 
-executing queries
+    executing queries
 
-Learning Resources
+- [ ] Learning Resources
 
-https://phpdelusions.net/pdo
+    - [ ] https://phpdelusions.net/pdo
 
-https://www.php.net/manual/en/book.pdo.php
+    - [ ] https://www.php.net/manual/en/book.pdo.php
 
-https://www.w3schools.com/php/php_mysql_connect.asp
+    - [ ] https://www.w3schools.com/php/php_mysql_connect.asp
 
 Goal
 
 Be able to connect PHP to MySQL using PDO.
 
-3. Prepared Statements (Security)
-Topics to learn
+3. [ ] Prepared Statements (Security)
+- [ ] Topics to learn
 
-Prepared statements
+    Prepared statements
 
-SQL injection prevention
+    SQL injection prevention
 
-Learning Resources
+- [ ] Learning Resources
 
-https://phpdelusions.net/pdo/prepared
+    - [ ] https://phpdelusions.net/pdo/prepared
 
-https://www.php.net/manual/en/pdo.prepared-statements.php
+    - [ ] https://www.php.net/manual/en/pdo.prepared-statements.php
 
-Example:
 
-$stmt = $pdo->prepare("SELECT * FROM assets WHERE serial_number = ?");
-$stmt->execute([$serial]);
-4. Web Security Basics
-Topics to learn
+4. [ ] Web Security Basics
+- [ ] Topics to learn
 
-Cross Site Scripting (XSS)
+    - [ ] Cross Site Scripting (XSS)
 
-htmlspecialchars()
+    - [ ] htmlspecialchars()
 
-Learning Resources
+- [ ] Learning Resources
 
-https://owasp.org/www-community/attacks/xss/
+    - [ ] https://owasp.org/www-community/attacks/xss/
 
-https://www.php.net/manual/en/function.htmlspecialchars.php
+    - [ ] https://www.php.net/manual/en/function.htmlspecialchars.php
 
-Example:
+5. [ ] HTML Forms and Tables
+- [ ] Topics to learn
 
-echo htmlspecialchars($asset['device_name']);
-5. HTML Forms and Tables
-Topics to learn
+    - [ ] <form>
 
-<form>
+    - [ ] <input>
 
-<input>
+    - [ ] <select>
 
-<select>
+    - [ ] <table>
 
-<table>
+    - [ ] form submission (GET / POST)
 
-form submission (GET / POST)
+- [ ] Learning Resources
 
-Learning Resources
+    - [ ] https://developer.mozilla.org/en-US/docs/Learn/Forms
 
-https://developer.mozilla.org/en-US/docs/Learn/Forms
+    - [ ] https://www.w3schools.com/html/html_forms.asp
 
-https://www.w3schools.com/html/html_forms.asp
+6. [ ] CSS Layout Basics
+- [ ] Topics to learn
 
-6. CSS Layout Basics
-Topics to learn
+    - [ ] Flexbox layout
 
-Flexbox layout
+    - [ ] basic table styling
 
-basic table styling
+    - [ ] conditional styling
 
-conditional styling
+- [ ] Learning Resources
 
-Learning Resources
+    - [ ] https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+    - [ ] https://developer.mozilla.org/en-US/docs/Web/CSS/flex
 
 ---
 
@@ -185,13 +176,13 @@ Checklist
 
 * [ ] Insert sample data
 
-Concepts practiced
+* [ ] Concepts practiced
 
-relational databases
+* [ ] relational databases
 
-foreign keys
+* [ ] foreign keys
 
-database normalization
+* [ ] database normalization
 
 ---
 
@@ -219,21 +210,21 @@ Tasks
 
 * [ ] Fields:
 
-serial number
+    -   serial number
 
-device name
+    -   device name
 
-price
+    -   price
 
-category
+    -   category
 
-status
+    -   status
 
-Concepts practiced
+    -   Concepts practiced
 
-HTML forms
+    -   HTML forms
 
-POST requests
+    -   POST requests
 
 ---
 
@@ -249,11 +240,11 @@ Tasks
 
 * [ ] Redirect back to dashboard
 
-Concepts practiced
+    -   Concepts practiced
 
-CRUD operations
+    -   CRUD operations
 
-prepared statements
+    -   prepared statements
 
 ---
 
@@ -266,11 +257,11 @@ Tasks
 
 * [ ] Display them in an HTML table
 
-Concepts practiced
+    -   Concepts practiced
 
-loops in PHP
+    -   loops in PHP
 
-dynamic HTML generation
+    -   dynamic HTML generation
 
 ---
 
@@ -283,11 +274,11 @@ Tasks
 
 * [ ] Display category names in dashboard
 
-Concepts practiced
+    -   concepts practiced
 
-relational database queries
+    -   relational database queries
 
-JOIN operations
+    -   JOIN operations
 
 ---
 
@@ -298,9 +289,9 @@ Tasks
 
 * [ ] Display total inventory value
 
-Concepts practiced
+    -   Concepts practiced
 
-SQL aggregate functions
+    -   SQL aggregate functions
 
 ---
 
@@ -315,11 +306,11 @@ Tasks
 
 * [ ] Filter assets by name or serial number
 
-Concepts practiced
+ * Concepts practiced
 
-dynamic SQL queries
+    -   dynamic SQL queries
 
-filtering results
+    -   filtering results
 
 ---
 
@@ -367,49 +358,49 @@ gearlog/
 ---
 
 # Phase 14 — Optional Bonus Features
-OOP Architecture
+ * [ ] OOP Architecture
 
-Learn PHP classes.
+    -   Learn PHP classes.
 
-Resources:
+    -   Resources:
 
-https://www.php.net/manual/en/language.oop5.basic.php
-https://www.php.net/manual/en/language.oop5.php
+        - [ ] https://www.php.net/manual/en/language.oop5.basic.php
+        - [ ] https://www.php.net/manual/en/language.oop5.php
 
-Example classes:
+    -   Example classes:
 
-Database
+        - [ ] Database
 
-Asset
+        - [ ] Asset
 
-Category
+        - [ ] Category
 
-Bootstrap UI
+ * [ ] Bootstrap UI
 
 Learn Bootstrap basics.
 
-Resource:
+    -   Resource:
 
-https://getbootstrap.com/docs/5.3/getting-started/introduction/
+        - [ ] https://getbootstrap.com/docs/5.3/getting-started/introduction/
 
 Goal:
 
 Make the interface responsive and professional.
 
-Authentication System
-Topics
+ * [ ] Authentication System
+    -   Topics
 
-sessions
+    -   sessions
 
-password hashing
+    -   password hashing
 
-login forms
+    -   login forms
 
-Resources
+    -   Resources
 
-https://www.php.net/manual/en/function.password-hash.php
+        - [ ] https://www.php.net/manual/en/function.password-hash.php
 
-https://www.php.net/manual/en/function.password-verify.php
+        - [ ] https://www.php.net/manual/en/function.password-verify.php
 
 ---
 
