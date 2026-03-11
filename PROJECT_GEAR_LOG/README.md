@@ -344,20 +344,20 @@ Tasks
 
 # Phase 13 — Project Organization
 
-Folder structure:
+## Folder Structure
 
- PROJECT_GEAR_LOG/<br>
-|<br>
-|--- db.php<br>
-|--- index.php<br>
-|--- add_asset.php<br>
-|<br>
-|--- css/<br>
-|   |--- style.css<br>
-|<br>
-|--- database/<br>
-    |--- schema.sql<br> 
----
+```text
+PROJECT_GEAR_LOG/
+├── db.php
+├── index.php
+├── add_asset.php
+│
+├── css/
+│   └── style.css
+│
+└── database/
+    └── schema.sql
+```
 
 # Phase 14 — Optional Bonus Features
  * [ ] OOP Architecture
