@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (isset($_POST['item'])) {
         $item = $_POST['item'];
-
         if (!in_array($item, $_SESSION['cart'])) {
             $_SESSION['cart'][] = $item;
         }
