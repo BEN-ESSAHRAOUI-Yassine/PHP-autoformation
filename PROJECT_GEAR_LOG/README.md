@@ -343,18 +343,18 @@ Tasks
 ---
 
 # Phase 13 — Project Organization
-Folder structure
-gearlog/
-│
-├── db.php
-├── index.php
-├── add_asset.php
-│
-├── css/
-│   └── style.css
-│
-└── database/
-    └── schema.sql
+Folder structure:
+PROJECT_GEAR_LOG/<br>
+│<br>
+├── db.php<br>
+├── index.php<br>
+├── add_asset.php<br>
+│<br>
+├── css/<br>
+│   └── style.css<br>
+│<br>
+└── database/<br>
+    └── schema.sql<br>
 ---
 
 # Phase 14 — Optional Bonus Features
@@ -377,7 +377,7 @@ gearlog/
 
  * [ ] Bootstrap UI
 
-Learn Bootstrap basics.
+    -   Learn Bootstrap basics.
 
     -   Resource:
 
