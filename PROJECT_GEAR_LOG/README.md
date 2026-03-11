@@ -112,13 +112,13 @@ Be able to connect PHP to MySQL using PDO.
 5. [ ] HTML Forms and Tables
 - [ ] Topics to learn
 
-    - [ ] <form>
+    - [ ] form
 
-    - [ ] <input>
+    - [ ] input
 
-    - [ ] <select>
+    - [ ] select
 
-    - [ ] <table>
+    - [ ] table
 
     - [ ] form submission (GET / POST)
 
