@@ -343,8 +343,10 @@ Tasks
 ---
 
 # Phase 13 — Project Organization
+
 Folder structure:
-/* PROJECT_GEAR_LOG/<br>
+
+ PROJECT_GEAR_LOG/<br>
 │<br>
 ├── db.php<br>
 ├── index.php<br>
@@ -354,7 +356,7 @@ Folder structure:
 │   └── style.css<br>
 │<br>
 └── database/<br>
-    └── schema.sql<br> */
+    └── schema.sql<br> 
 ---
 
 # Phase 14 — Optional Bonus Features
