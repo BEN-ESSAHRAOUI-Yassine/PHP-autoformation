@@ -19,4 +19,10 @@ D005_CHF02_SOL1 : PHP Functions Challenge 02: The Calculation Engine (Return Val
 D005_CHF03_SOL1 : PHP Functions Challenge 03: The Logic Gatekeeper (Boolean Return)<br>
 D005_CHF04_SOL1 : PHP Functions Challenge 04: The "Safe" Multiplier (Logic Guarding)<br>
 D005_CHF05_SOL1 : PHP Functions Challenge 05: The Text Flipper (Algorithmic Synthesis)<br>
-
+D006_CHA01_SOL1 : PHP Challenge 6: GET & URL ManipulationAssignment<br>
+D006_CHA02_SOL1 : PHP Challenge 7: The Contact Form (POST & Logic)<br>
+D007_CHA08_SOL1 : PHP Challenge 8: The Multi-Step "Onboarding" (SESSIONS)<br>
+D007_CHA09_SOL1 : PHP Challenge 9: The "Shopping Cart" Mini-App (Combined)Assignment<br>
+D008_CHA01_SOL1 : PHP SQL Challenge #1: The Architect's SchemaAssignment<br>
+D008_CHA02_SOL1 : PHP SQL Challenge #2: Data Seeding<br>
+D008_CHA03_SOL1 : PHP SQL Challenge #3: The Library Requests<br>
