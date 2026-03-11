@@ -347,16 +347,16 @@ Tasks
 Folder structure:
 
  PROJECT_GEAR_LOG/<br>
-│<br>
-├── db.php<br>
-├── index.php<br>
-├── add_asset.php<br>
-│<br>
-├── css/<br>
-│   └── style.css<br>
-│<br>
-└── database/<br>
-    └── schema.sql<br> 
+|<br>
+|--- db.php<br>
+|--- index.php<br>
+|--- add_asset.php<br>
+|<br>
+|--- css/<br>
+|   |--- style.css<br>
+|<br>
+|--- database/<br>
+    |--- schema.sql<br> 
 ---
 
 # Phase 14 — Optional Bonus Features
