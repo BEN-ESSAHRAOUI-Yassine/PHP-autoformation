@@ -324,7 +324,9 @@ Tasks
 
 Example:
 
-Under Repair → red
+Not available → red
+
+Under Repair → Orange
 
 Deployed → green
 
