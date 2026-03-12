@@ -20,16 +20,17 @@ Understand the requirements and expected features before starting development.
   - Search functionality
   - Inventory value calculation
 - [ ] Sketch the UI layout on paper.<br>
-+---------------------------------------+<br>
-| GearLog Dashboard                     |<br>
-| Total Inventory Value: $5400          |<br>
-| Search: [________]                    |<br>
-+---------------------------------------+<br>
-| Serial | Device | Category | Status   |<br>
-|---------------------------------------|<br>
-| SN123 | Dell | Laptop | Repair        |<br>
-+---------------------------------------+<br>
-
+```text
++---------------------------------------+
+| GearLog Dashboard                     |
+| Total Inventory Value: $5400          |
+| Search: [________________]            |
++---------------------------------------+
+| Serial | Device | Category | Status   |
+|---------------------------------------|
+| SN123 | Dell | Laptop | Repair        |
++---------------------------------------+
+```
 ---
 
 # Phase 1 — Auto-formation (Learning the Basics)
