@@ -26,3 +26,11 @@ D007_CHA09_SOL1 : PHP Challenge 9: The "Shopping Cart" Mini-App (Combined)Assign
 D008_CHA01_SOL1 : PHP SQL Challenge #1: The Architect's SchemaAssignment<br>
 D008_CHA02_SOL1 : PHP SQL Challenge #2: Data Seeding<br>
 D008_CHA03_SOL1 : PHP SQL Challenge #3: The Library Requests<br>
+D009_CHA04_SOL1 : PHP SQL Challenge #4: INNER JOIN <br>
+D009_CHA05_SOL1 : PHP SQL Challenge #5: Aggregates<br>
+D009_CHA06_SOL1 : PHP SQL Challenge #6: GROUP BY & HAVING<br>
+D010_CHA07-08-09-10_SOL1 : PHP SQL challenges of day 10 <br>
+-    db.php :Challenges #7: The Secure Connection <br>
+-    test_fetch.php :Challenges #8: The Secure Fetch <br>
+-    test_add.php :Challenges #9: The Secure Insert <br>
+-    categories_menu.php :Challenges #10: The Dynamic Dropdown<br>
